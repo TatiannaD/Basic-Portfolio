@@ -2,48 +2,54 @@
 <html>
 <head>
 	<title>Tatianna's Portfolio</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!--order of css sheet is important; css sheet that is last will override the first stylesheet-->
 </head>
+
 <body>
 
-	<header> 
-		<h1>Tatianna</h1>
-	<!-- Using nav tag for Navigation Bar -->
-		<nav> 
-		<ul>
-  			<li><a href="index.html">About</a></li>
-  			<li><a href="portfolio.html">Portfolio</a></li>
-  			<li><a href="contact.html">Contact</a></li>
-		</ul>
-		</nav>
+	<header id="nav">
+		<div class="container">
+			<a href="index.html" id="logo">Tatianna</a>
+	<!-- Using nav tag for Navigation Bar; listing after nav tag doesn't give default bullets from unordered list -->
+		 	<nav> 
+		 		<a href="index.html">About</a>
+		  		<a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
+		 	</nav>
+		</div>
 	</header>
-		
-	<section>	
-		<h2>About Me</h2>
+	
 
-		<br>
+	<!--giving generic id "mainsection" also for us to style once for that id with class container around it; this way when we style it will reflect in all 3 sections-->
+	<div id="mainsection" class="container">	
+		<section class="mainsection">
+			<h1>About Me</h1>
 
-		<img src="http://lorempixel.com/400/200">
+			<img src="assets/images/tati.png" alt="me" id="picture">
 
-		<br>
+			<p>My name is Tatianna Watwood. I'm currently a medical coder at Medical Data Exchange. When I am not chasing my kids around, I spend my time reading. My goal this year is to start a new career path as a junior developer. As I continue on my path to become a developer I hope I can creat an app one day. </p>
+		</section>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio cumque et magnam dolore quas eum ducimus provident, nulla unde illum ratione eius magni nisi necessitatibus. Facilis nam voluptas, impedit nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque libero doloremque omnis nobis, eaque dolorem quia voluptatum nesciunt laboriosam ratione eveniet veritatis, blanditiis atque, iure, distinctio incidunt tempora velit voluptas.</p>
+		<!--Connect with Me Section-->
+		<section class="connectme">
+			<div id="connect">
+				<h2>Connect with Me</h2>
+		<!-- Link to new pages using icons -->
+				<img src="assets/images/github.png" alt= "github" class="social">
+				<img src="assets/images/linkedin.png" alt="linkedin" class="social">
+				<img src="assets/images/stackoverflow.png" alt="stackoverflow" class="social">
+			</div>
+		</section>
+	</div>
 
-	</section>
-
-
-	<!--Connect with Me Section-->
-	<section>
-		<h3>Connect with Me</h3>
-	<!-- Link to new pages using icons -->
-		<br>
-
-		<a href="#"> <img src="https://cdn0.iconfinder.com/data/icons/social-network-7/50/29-128.png"></a>
-		<a href='#'> <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-128.png"></a>
-		<a href="#"> <img src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/overflow-128.png"></a>
-
-	</section>
-
-
+	<!--Footer with copyright-->
+	<footer>
+		<div class="container footer">
+			&copy; 2017 Tatianna Watwood 
+		</div>
+	</footer>
 
 </body>
 </html>
